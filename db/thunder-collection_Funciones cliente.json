@@ -1,0 +1,213 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Funciones cliente",
+    "dateExported": "2024-02-17T21:45:33.296Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "52fcc5ea-293e-4eb4-be5d-1e7026c57afa",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "usuariosPost",
+            "url": "http://localhost:3000/api/usuarios",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-17T19:44:08.566Z",
+            "modified": "2024-02-17T21:25:33.588Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"client2\",\n  \"correo\":\"client2@email.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9ea7bf8e-497f-41f5-bcfb-62697362a005",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "usuarioLogin",
+            "url": "http://localhost:3000/api/usuarios/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-17T19:44:08.567Z",
+            "modified": "2024-02-17T21:35:35.470Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\":\"client@email.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8a389459-56cf-4082-832c-d7457d844b9e",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "getProductoByNombre",
+            "url": "http://localhost:3000/api/productos/nombre",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-17T19:44:08.568Z",
+            "modified": "2024-02-17T19:44:08.568Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"producto\":\"chaleco para perros\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "03d3d42b-dd34-4a7e-a600-ca5cae6fbf2c",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "productosGet",
+            "url": "http://localhost:3000/api/productos",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-17T19:44:08.569Z",
+            "modified": "2024-02-17T19:44:08.569Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b5e07310-8dcd-47c7-840b-462ca216572a",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "categoriasGet",
+            "url": "http://localhost:3000/api/categorias",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-17T19:44:08.570Z",
+            "modified": "2024-02-17T19:44:08.570Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "60951ecd-651a-4f4c-9dc1-96b20ee51e65",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "getProductosByCategoria",
+            "url": "http://localhost:3000/api/productos/categoria",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-02-17T19:44:08.571Z",
+            "modified": "2024-02-17T19:44:08.571Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"categoria_producto\":\"seguridad aviaria\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "897a95b4-cf21-4813-adb2-93e3f154816b",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "carritoCompras",
+            "url": "http://localhost:3000/api/facturas/agregarProducto",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-17T19:44:08.572Z",
+            "modified": "2024-02-17T19:44:08.572Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cliente\":\"client@email.com\",\n  \"producto\":\"casco para pericos\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9e23b9b2-581f-42d7-9da3-9a69a86df7d3",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "finalizarCompra",
+            "url": "http://localhost:3000/api/facturas/finalizarCompra",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-02-17T19:44:08.573Z",
+            "modified": "2024-02-17T19:44:08.573Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id_factura\":\"65d0ee72c9aec5cddcdc7485\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7341240b-66e1-4643-92d1-97856cded3ac",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "productosMasVendidos",
+            "url": "http://localhost:3000/api/productos/masVendidos",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-02-17T21:04:01.631Z",
+            "modified": "2024-02-17T21:04:01.631Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8712bc02-4dcd-42c8-ad94-f320c917af51",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "usuariosClientDelete",
+            "url": "http://localhost:3000/api/usuarios/cliente/65d12457879487bdcd82174f",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-02-17T21:34:14.284Z",
+            "modified": "2024-02-17T21:34:14.284Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQxMjQ1Nzg3OTQ4N2JkY2Q4MjE3NGYiLCJpYXQiOjE3MDgyMDUyMDEsImV4cCI6MTcwODIwODgwMX0.p3kGnvSJqgLfyuszinIjale0H0V48CneDptc1OIxmOk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cliente\":\"client2@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "88c3e187-ba75-4413-a5d1-72eaddf17fdf",
+            "colId": "f6abd923-d6e9-4a0a-9552-6322c6ca4b52",
+            "containerId": "",
+            "name": "usuariosClientPut",
+            "url": "http://localhost:3000/api/usuarios/cliente/65cfd5b09587631873b3621d",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-02-17T21:45:08.627Z",
+            "modified": "2024-02-17T21:45:08.627Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWNmZDViMDk1ODc2MzE4NzNiMzYyMWQiLCJpYXQiOjE3MDgyMDU3MzYsImV4cCI6MTcwODIwOTMzNn0.kOwvcQWUYqEv7WEGVvlyCqoHPPuRvYDX2HsI7kUYXfM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"julio\",\n  \"cliente\":\"client@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

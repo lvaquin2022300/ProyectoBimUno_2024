@@ -1,0 +1,209 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Productos",
+    "dateExported": "2024-02-17T21:45:41.903Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "21b401da-0262-4cb5-81e9-b5d57cb56038",
+            "colId": "143fdef4-32f8-4c24-a52a-fa8a3d333a0e",
+            "containerId": "",
+            "name": "productosPost",
+            "url": "http://localhost:3000/api/productos",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-17T19:43:47.258Z",
+            "modified": "2024-02-17T20:21:22.045Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"paño\",\n  \"categoria\":\"limpieza\",\n  \"stock\":\"4\",\n  \"admin\":\"admin@email.com\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fc19bf2c-68f1-4f17-ab3d-4e9cb6c8c423",
+            "colId": "143fdef4-32f8-4c24-a52a-fa8a3d333a0e",
+            "containerId": "",
+            "name": "productosGet",
+            "url": "http://localhost:3000/api/productos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-17T19:43:47.259Z",
+            "modified": "2024-02-17T19:43:47.259Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b8fd4b47-f1ee-4180-b676-d11c4dba4b63",
+            "colId": "143fdef4-32f8-4c24-a52a-fa8a3d333a0e",
+            "containerId": "",
+            "name": "getProductosById",
+            "url": "http://localhost:3000/api/productos/65cf97725b554cd9cc5f2782",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-17T19:43:47.260Z",
+            "modified": "2024-02-17T19:43:47.260Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5598ecba-0538-439a-a776-6b7ca27039cb",
+            "colId": "143fdef4-32f8-4c24-a52a-fa8a3d333a0e",
+            "containerId": "",
+            "name": "getProductosByNombre",
+            "url": "http://localhost:3000/api/productos/nombre",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-17T19:43:47.261Z",
+            "modified": "2024-02-17T19:43:47.261Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"producto\":\"casco para palomas\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "bbe758b8-31b7-483d-b832-6fcee6368b99",
+            "colId": "143fdef4-32f8-4c24-a52a-fa8a3d333a0e",
+            "containerId": "",
+            "name": "getProductosAgotados",
+            "url": "http://localhost:3000/api/productos/agotado",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-17T19:43:47.262Z",
+            "modified": "2024-02-17T20:22:40.676Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa667ead-697c-4e37-95c3-e3635e4cd7b1",
+            "colId": "143fdef4-32f8-4c24-a52a-fa8a3d333a0e",
+            "containerId": "",
+            "name": "productosPut",
+            "url": "http://localhost:3000/api/productos/65cf9f0b452d7844896e2a4b",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-02-17T19:43:47.263Z",
+            "modified": "2024-02-17T20:21:55.169Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"chaleco para perros\",\n  \"stock\":\"13\",\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9e4dfa1a-cef6-4f51-93a8-4a6c1d7df87d",
+            "colId": "143fdef4-32f8-4c24-a52a-fa8a3d333a0e",
+            "containerId": "",
+            "name": "productoDelete",
+            "url": "http://localhost:3000/api/productos/65d0bdce6dd9626393782bbf",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-02-17T19:43:47.264Z",
+            "modified": "2024-02-17T20:22:57.463Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8abfd11f-e28a-4749-961d-52432dd26701",
+            "colId": "143fdef4-32f8-4c24-a52a-fa8a3d333a0e",
+            "containerId": "",
+            "name": "getProductosByCategoria",
+            "url": "http://localhost:3000/api/productos/categoria",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-17T19:43:47.265Z",
+            "modified": "2024-02-17T19:43:47.265Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"categoria_producto\":\"seguridad aviaria\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4420feaa-5bdc-4527-abee-87978364bf52",
+            "colId": "143fdef4-32f8-4c24-a52a-fa8a3d333a0e",
+            "containerId": "",
+            "name": "productosDeshabilitadosGet",
+            "url": "http://localhost:3000/api/productos/deshabilitados",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2024-02-17T19:43:47.266Z",
+            "modified": "2024-02-17T20:27:45.426Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "58eb0838-aba6-4794-b3a8-e209995ebc2e",
+            "colId": "143fdef4-32f8-4c24-a52a-fa8a3d333a0e",
+            "containerId": "",
+            "name": "productosMasVendidos",
+            "url": "http://localhost:3000/api/productos/masVendidos",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-02-17T20:48:27.936Z",
+            "modified": "2024-02-17T20:48:43.786Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

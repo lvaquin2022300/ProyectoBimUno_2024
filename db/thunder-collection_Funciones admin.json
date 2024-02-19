@@ -1,0 +1,438 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Funciones admin",
+    "dateExported": "2024-02-17T21:45:37.763Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b9f92d97-cdd3-482b-86ae-0e20b51a4480",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "productosPost",
+            "url": "http://localhost:3000/api/productos",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-02-17T19:43:57.609Z",
+            "modified": "2024-02-17T20:21:06.384Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"casco para palomas\",\n  \"categoria\":\"seguridad aviaria\",\n  \"stock\":\"25\",\n  \"admin\":\"admin@email.com\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9dad070b-8e90-4b3b-99a2-c6e82a53a07d",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "productosGet",
+            "url": "http://localhost:3000/api/productos",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-02-17T19:43:57.610Z",
+            "modified": "2024-02-17T19:43:57.610Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7bbe9d98-6d4a-404f-9a10-e3aad37d819d",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "getProductoById",
+            "url": "http://localhost:3000/api/productos/65cfcf939587631873b3620b",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-02-17T19:43:57.611Z",
+            "modified": "2024-02-17T19:43:57.611Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f51a4fb2-a741-4b9f-93bd-5c3008837115",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "getProductoByNombre",
+            "url": "http://localhost:3000/api/productos/nombre",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-17T19:43:57.612Z",
+            "modified": "2024-02-17T19:43:57.612Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"producto\":\"casco para palomas\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1b74f285-19ff-4dbe-9dc5-9f606e1b39b8",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "productosPut",
+            "url": "http://localhost:3000/api/productos/65cfcf939587631873b3620b",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-17T19:43:57.613Z",
+            "modified": "2024-02-17T20:22:09.114Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"chaleco para perros\",\n  \"stock\":\"13\",\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1f249faa-38a1-4c26-866b-f14920fc1f9d",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "getProductosAgotados",
+            "url": "http://localhost:3000/api/productos/agotado",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-17T19:43:57.614Z",
+            "modified": "2024-02-17T20:22:25.574Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5f8bb581-00c7-4dbf-a034-f625681a3c32",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "productoDelete",
+            "url": "http://localhost:3000/api/productos/65cf9f0b452d7844896e2a4b",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2024-02-17T19:43:57.615Z",
+            "modified": "2024-02-17T20:23:18.239Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e0b0b5ac-c948-4864-8d30-4a1588dd2ad3",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "categoriasPost",
+            "url": "http://localhost:3000/api/categorias",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-02-17T19:43:57.616Z",
+            "modified": "2024-02-17T19:43:57.616Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"comida\",\n  \"admin\": \"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "63fc82da-c283-4a7f-9f10-40626d2a861e",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "categoriasGet",
+            "url": "http://localhost:3000/api/categorias",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-17T19:43:57.617Z",
+            "modified": "2024-02-17T19:43:57.617Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a905fa0a-a986-4e87-8777-84565e8212eb",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "categoriasPut",
+            "url": "http://localhost:3000/api/categorias/65cfceb19587631873b36206",
+            "method": "PUT",
+            "sortNum": 100000,
+            "created": "2024-02-17T19:43:57.618Z",
+            "modified": "2024-02-17T20:23:51.450Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"limpieza\",\n  \"admin\": \"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d53c3f46-be95-43ea-9984-519770347524",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "categoriasDelete",
+            "url": "http://localhost:3000/api/categorias/65cfceb19587631873b36206",
+            "method": "DELETE",
+            "sortNum": 110000,
+            "created": "2024-02-17T19:43:57.619Z",
+            "modified": "2024-02-17T20:24:05.258Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"admin\": \"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "7f39f2a7-8750-42f4-bc04-6ba6f97d00a7",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "usuariosPost",
+            "url": "http://localhost:3000/api/usuarios",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-02-17T19:43:57.620Z",
+            "modified": "2024-02-17T19:43:57.620Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"admin\",\n  \"correo\":\"admin@email.com\",\n  \"password\":\"123456\",\n  \"role\":\"ADMIN_ROLE\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4eaf9a72-ba86-4692-aabc-0a8421c7f308",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "usuariosGet",
+            "url": "http://localhost:3000/api/usuarios",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2024-02-17T19:43:57.621Z",
+            "modified": "2024-02-17T19:43:57.621Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "33bb012a-9be4-47fb-9170-30aafd8b0c49",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "usuariosPut",
+            "url": "http://localhost:3000/api/usuarios/65cac4a93f69f860c25d361e",
+            "method": "PUT",
+            "sortNum": 140000,
+            "created": "2024-02-17T19:43:57.622Z",
+            "modified": "2024-02-17T20:25:31.488Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\":\"superAdmin\",\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f6d51ffd-d586-4306-a18f-f189d812114c",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "usuariosDelete",
+            "url": "http://localhost:3000/api/usuarios/65cac4a93f69f860c25d361e",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2024-02-17T19:43:57.623Z",
+            "modified": "2024-02-17T20:26:58.031Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9814a62c-212e-4ccb-bb4d-426f647daad5",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "usuarioLogin",
+            "url": "http://localhost:3000/api/usuarios/login",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2024-02-17T19:43:57.624Z",
+            "modified": "2024-02-17T19:43:57.624Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"correo\":\"admin@email.com\",\n  \"password\":\"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "33b002dd-c99d-45b7-9957-0c9883e50bbd",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "usuariosPutRole",
+            "url": "http://localhost:3000/api/usuarios/role/65cfd5b09587631873b3621d",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2024-02-17T19:43:57.625Z",
+            "modified": "2024-02-17T20:27:22.365Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"role\":\"ADMIN_ROLE\",\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "12071ee0-68fd-4c94-8b5d-b96bd7850139",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "getFacturaByCliente",
+            "url": "http://localhost:3000/api/facturas/cliente",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2024-02-17T19:43:57.626Z",
+            "modified": "2024-02-17T19:43:57.626Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cliente\":\"client@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ebcc36e7-c56f-4f9d-9c44-a41cbcb90b7c",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "productosDeshabilitadosGet",
+            "url": "http://localhost:3000/api/productos/deshabilitados",
+            "method": "POST",
+            "sortNum": 200000,
+            "created": "2024-02-17T19:43:57.627Z",
+            "modified": "2024-02-17T20:27:58.883Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ac8a0aeb-d3e4-441a-bdad-f42ab00fe669",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "facturasDelete",
+            "url": "http://localhost:3000/api/facturas/65d0fd9f7823075dfdcd6a39",
+            "method": "DELETE",
+            "sortNum": 210000,
+            "created": "2024-02-17T19:43:57.628Z",
+            "modified": "2024-02-17T20:28:21.923Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"admin\":\"admin@email.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d87b4cf3-8b1c-43c9-b32a-35704238bff2",
+            "colId": "0f34c8fd-ce28-4c83-966e-5568576497a3",
+            "containerId": "",
+            "name": "productosMasVendidos",
+            "url": "http://localhost:3000/api/productos/masVendidos",
+            "method": "POST",
+            "sortNum": 220000,
+            "created": "2024-02-17T21:03:45.239Z",
+            "modified": "2024-02-17T21:03:45.239Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
