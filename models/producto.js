@@ -1,7 +1,7 @@
 const { Int32 } = require('bson');
-const { Schema, model} = require('mongoose');
+const { Schema, model } = require('mongoose');
 
-const ProductoSchema = Schema ({
+const ProductoSchema = Schema({
     nombre: {
         type: String,
         required: [true, 'Nombre obligatorio']
@@ -13,14 +13,14 @@ const ProductoSchema = Schema ({
     stock: {
         type: Number
     },
-    estado:{
+    estado: {
         type: Boolean,
         default: true
     }
 });
 
-ProductoSchema.methods.toJSON = function(){
-    const { __v, _id, ...producto} = this.toObject();
+ProductoSchema.methods.toJSON = function () {
+    const { __v, _id, ...producto } = this.toObject();
     producto.pid = _id;
     return producto;
 }
