@@ -11,7 +11,7 @@ const router = Router();
 router.get("/", facturasGet);
 
 router.post(
-    "/",
+    "/",  
     [
         check("cliente", "El cliente es obligatorio").not().isEmpty(),
         check("cliente", "El cliente debe ser un correo").isEmail(),

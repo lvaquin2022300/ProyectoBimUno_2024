@@ -1,6 +1,6 @@
 const { Schema, model, Types } = require('mongoose');
 
-const FacturaHasProductoSchema = Schema ({
+const FacturaHasProductoSchema = Schema({
     factura: {
         type: Types.ObjectId,
         ref: 'Factura',
@@ -10,7 +10,7 @@ const FacturaHasProductoSchema = Schema ({
         type: String,
         required: [true, 'Producto obligatorio']
     },
-    estado:{
+    estado: {
         type: Boolean,
         default: true
     }
