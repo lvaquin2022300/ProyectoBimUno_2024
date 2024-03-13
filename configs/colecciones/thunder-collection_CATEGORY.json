@@ -1,0 +1,83 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CATEGORY",
+    "dateExported": "2024-03-13T20:10:12.088Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a3049137-8fbd-4876-8506-fbc853415934",
+            "colId": "56e9dc87-e73a-4a72-b57a-1b908591684a",
+            "containerId": "",
+            "name": "PostCategory",
+            "url": "http://localhost:3000/api/v1/categoria",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-13T17:57:23.436Z",
+            "modified": "2024-03-13T19:19:05.689Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameCat\": \"PRUEBADELETE\",\n  \"descripcion\": \"esta categoria es una prueba\",\n  \"idUsuario\": \"65f1f75a3b04a8c9a177e810\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "2b4b1ff9-9b28-4b56-bcd0-c34f68be6f17",
+            "colId": "56e9dc87-e73a-4a72-b57a-1b908591684a",
+            "containerId": "",
+            "name": "GetCategory",
+            "url": "http://localhost:3000/api/v1/categoria",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-13T17:57:23.437Z",
+            "modified": "2024-03-13T17:57:23.437Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "823d57b1-a18d-475e-ad88-ddd6f5464f29",
+            "colId": "56e9dc87-e73a-4a72-b57a-1b908591684a",
+            "containerId": "",
+            "name": "EditCategory",
+            "url": "http://localhost:3000/api/v1/categoria/put/65f1fc293b04a8c9a177e834",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-13T17:57:23.438Z",
+            "modified": "2024-03-13T19:20:16.731Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameCat\": \"Prueba Edit\",\n  \"descripcion\": \"este es un boddy de prueba\",\n  \"idUsuario\": \"65f1f75a3b04a8c9a177e810\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "87f4cb0f-44e1-4752-8bba-610da8479120",
+            "colId": "56e9dc87-e73a-4a72-b57a-1b908591684a",
+            "containerId": "",
+            "name": "DeleteCategory",
+            "url": "http://localhost:3000/api/v1/categoria/65f1fc293b04a8c9a177e834",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-13T17:57:23.439Z",
+            "modified": "2024-03-13T19:24:00.233Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"idUsuario\": \"65f1f75a3b04a8c9a177e810\"\n}",
+                "form": []
+            },
+            "reqType": "del",
+            "tests": []
+        }
+    ]
+}

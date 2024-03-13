@@ -1,26 +1,26 @@
-const { Schema, model} = require('mongoose');
+const { Schema, model } = require('mongoose');
 
-const FacturaSchema = Schema ({
+const FacturaSchema = Schema({
     Cliente: {
         type: String,
         required: [true, 'Cliente obligatorio']
     },
-    fecha_emisión:{
+    fecha_emisión: {
         type: Date,
         default: Date.now()
     },
-    en_compra:{
+    en_compra: {
         type: Boolean,
         default: true
     },
-    estado:{
+    estado: {
         type: Boolean,
         default: true
     }
 });
 
-FacturaSchema.methods.toJSON = function(){
-    const { __v, _id, ...factura} = this.toObject();
+FacturaSchema.methods.toJSON = function () {
+    const { __v, _id, factura } = this.toObject();
     factura.fid = _id;
     return factura;
 }

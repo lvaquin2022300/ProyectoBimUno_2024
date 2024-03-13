@@ -1,0 +1,57 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "USER EDIT",
+    "dateExported": "2024-03-13T20:10:31.385Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f710d1c7-1289-41e4-bc80-10e317cff7b1",
+            "colId": "670bf429-8171-4be2-929b-788d488f432c",
+            "containerId": "",
+            "name": "EditUser ADMIN",
+            "url": "http://localhost:3000/api/v1/users/65ea5f2f00d6645b29635e05",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-03-13T17:57:23.468Z",
+            "modified": "2024-03-13T17:57:23.468Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhNWY1MTAwZDY2NDViMjk2MzVlMDkiLCJpYXQiOjE3MDk4NTkzMzUsImV4cCI6MTcwOTg2MjkzNX0.OM_Qh3DCA1i9iktFCbj_ZF-T46B8aB1WSXtasiODQ6U"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameUser\": \"Perro\",\n  \"email\": \"Perro@kinal.edu.gt\",\n  \"password\": \"123456\",\n  \"role\": \"ADMIN_ROLE\",\n  \"estado\": \"true\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3964c307-2ba7-4ca6-98ba-d835ca27684e",
+            "colId": "670bf429-8171-4be2-929b-788d488f432c",
+            "containerId": "",
+            "name": "EditUser ClientsOnly",
+            "url": "http://localhost:3000/api/v1/users/put/65ea5f2f00d6645b29635e05",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-03-13T17:57:23.469Z",
+            "modified": "2024-03-13T17:57:23.469Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWVhNWYyZjAwZDY2NDViMjk2MzVlMDUiLCJpYXQiOjE3MDk4NjEzMDIsImV4cCI6MTcwOTg2NDkwMn0.Yqsg6CzWgmyuL-K-ICa1wu6YqGOMEIWh--9hw0nf9Ok"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameUser\": \"mapache\",\n  \"oldPassword\": \"123456\",\n  \"newPassword\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}

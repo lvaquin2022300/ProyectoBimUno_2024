@@ -1,0 +1,113 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "PRODUCTS",
+    "dateExported": "2024-03-13T20:10:51.653Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "74a28ed9-b3ec-4bd2-90a9-5f988c03b378",
+            "colId": "4d7000e4-756d-454b-a789-05e81bae7b58",
+            "containerId": "",
+            "name": "PostProduct",
+            "url": "http://localhost:3000/api/v1/productos",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-13T17:58:46.255Z",
+            "modified": "2024-03-13T19:42:35.160Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"PruebaProducto\",\n  \"price\": \"10\",\n  \"category\": \"Lacteos\",\n  \"stock\": \"115\",\n  \"idUsuario\": \"65f1f75a3b04a8c9a177e810\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "2fad782a-03dc-44b0-a433-54520038104f",
+            "colId": "4d7000e4-756d-454b-a789-05e81bae7b58",
+            "containerId": "",
+            "name": "GetProducts",
+            "url": "http://localhost:3000/api/v1/productos",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-03-13T17:58:46.256Z",
+            "modified": "2024-03-13T17:58:46.256Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e5919555-13f9-4538-af98-d29c3d8a6b00",
+            "colId": "4d7000e4-756d-454b-a789-05e81bae7b58",
+            "containerId": "",
+            "name": "GetProductByCategory",
+            "url": "http://localhost:3000/api/v1/productos/Lacteos",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2024-03-13T19:04:08.884Z",
+            "modified": "2024-03-13T19:59:58.055Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "49fe7baf-7d79-4c90-b572-3c234a24ad7d",
+            "colId": "4d7000e4-756d-454b-a789-05e81bae7b58",
+            "containerId": "",
+            "name": "PutProduct",
+            "url": "http://localhost:3000/api/v1/productos/65f1fdac79c9e016ccc3d112",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-13T17:58:46.257Z",
+            "modified": "2024-03-13T19:42:11.825Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Leche\",\n  \"price\": \"20.00\",\n  \"category\": \"65f1fbe53b04a8c9a177e829\",\n  \"stock\": \"50\",\n  \"idUsuario\": \"65f1f75a3b04a8c9a177e810\"\n}",
+                "form": []
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "ed40a4b4-a649-48b5-b29d-79f9f14a8d23",
+            "colId": "4d7000e4-756d-454b-a789-05e81bae7b58",
+            "containerId": "",
+            "name": "DeleteProduct",
+            "url": "http://localhost:3000/api/v1/productos/65f201ac1d4bae6d5b8f80fe",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-13T17:58:46.258Z",
+            "modified": "2024-03-13T19:42:55.449Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"idUsuario\": \"65f1f75a3b04a8c9a177e810\"\n}",
+                "form": []
+            },
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "28b59a43-c712-4413-ad46-bfc93646f923",
+            "colId": "4d7000e4-756d-454b-a789-05e81bae7b58",
+            "containerId": "",
+            "name": "GetProductsByName",
+            "url": "http://localhost:3000/api/v1/productos/queso",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-03-13T19:05:44.159Z",
+            "modified": "2024-03-13T20:07:18.671Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ]
+}

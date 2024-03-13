@@ -1,0 +1,59 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "CARRITO",
+    "dateExported": "2024-03-13T20:10:57.768Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "a7bacc34-56c7-4a9e-9e0a-82869363ecc3",
+            "colId": "ddd6b5f8-b755-426e-b2d0-08f11fe54ca4",
+            "containerId": "",
+            "name": "PostCarrito",
+            "url": "http://localhost:3000/finalAPI/v1/cart/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-13T18:15:58.914Z",
+            "modified": "2024-03-13T19:57:04.149Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYxZjc3YzNiMDRhOGM5YTE3N2U4MWMiLCJpYXQiOjE3MTAzNTk1ODEsImV4cCI6MTcxMDM2MzE4MX0.fDvby_9JHOdZjWyw2ATu0rjyy50yl95jdMt9U5cOmPQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cDate\": \"2000-05-12\",\n  \"user\": \"65f1f77c3b04a8c9a177e81c\",\n  \"product\": \"queso\",\n  \"quantity\": \"1\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "b3d0aae0-0007-455e-945e-ce28cb1abbfe",
+            "colId": "ddd6b5f8-b755-426e-b2d0-08f11fe54ca4",
+            "containerId": "",
+            "name": "DeleteCarrito",
+            "url": "http://localhost:3000/finalAPI/v1/cart/delete/65f20510b8bce763e449088b",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-03-13T18:15:58.915Z",
+            "modified": "2024-03-13T19:57:42.041Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYxZjc3YzNiMDRhOGM5YTE3N2U4MWMiLCJpYXQiOjE3MTAzNTk1ODEsImV4cCI6MTcxMDM2MzE4MX0.fDvby_9JHOdZjWyw2ATu0rjyy50yl95jdMt9U5cOmPQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"userID\":\"65f1f77c3b04a8c9a177e81c\"\n}",
+                "form": []
+            },
+            "reqType": "del",
+            "tests": []
+        }
+    ]
+}
