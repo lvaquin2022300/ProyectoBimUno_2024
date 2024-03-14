@@ -11,8 +11,8 @@ import categoryRoutes from '../src/category/category.routes.js'
 import ProductRoutes from '../src/product/product.routes.js';
 import CartRoutes from '../src/cart/cart.routes.js';
 
-class Server{
-    constructor(){
+class Server {
+    constructor() {
         this.app = express();
         this.port = process.env.PORT;
         this.usuarioPath = '/api/v1/users'
@@ -20,25 +20,25 @@ class Server{
         this.categoryPath = '/api/v1/categoria'
         this.productPath = '/api/v1/productos';
         this.cartPath = '/finalAPI/v1/cart';
-        
+
         this.middlewares();
         this.conectarDB();
         this.routes();
     }
 
-    async conectarDB(){
+    async conectarDB() {
         await dbConnection();
     }
 
-    middlewares(){
-        this.app.use(express.urlencoded({extended: false}));
+    middlewares() {
+        this.app.use(express.urlencoded({ extended: false }));
         this.app.use(cors());
         this.app.use(express.json());
         this.app.use(helmet());
         this.app.use(morgan('dev'));
     }
 
-    routes(){
+    routes() {
         this.app.use(this.usuarioPath, userRoutes);
         this.app.use(this.authPath, authRoutes);
         this.app.use(this.categoryPath, categoryRoutes);
@@ -46,7 +46,7 @@ class Server{
         this.app.use(this.cartPath, CartRoutes);
     }
 
-    listen(){
+    listen() {
         this.app.listen(this.port, () => {
             console.log('Servidor corriendo en el puerto', this.port);
         });
