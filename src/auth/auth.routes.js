@@ -7,14 +7,14 @@ import { existenteEmail } from '../helpers/db-validators.js';
 const router = Router();
 
 router.post(
-    '/registrarse', 
+    '/registrarse',
     [
         check('nameUser', 'El nombre es obligatorio').not().isEmpty(),
         check('password', 'El password debe ser de más de 6 letras').isLength({ min: 6 }),
         check('email', 'El correo no es válido').isEmail(),
         check('email').custom(existenteEmail),
         validarCampos
-    ], 
+    ],
     registrarse
 );
 
@@ -24,7 +24,7 @@ router.post(
         check('email', 'El email no es un correo valido').isEmail(),
         check('password', 'La contraseña es obligatoria').not().isEmpty(),
         validarCampos
-    ], 
+    ],
     login
 );
 
